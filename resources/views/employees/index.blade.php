@@ -9,6 +9,9 @@
 </head>
 
 <body>
+    @extends('master')
+    @section('title', 'Daftar Pegawai')
+    @section('content')
     <div class="container mt-5">
         <h1 class="mb-4">Daftar pegawai</h1>
     <table border="1" cellpadding="5" cellspacing="0">
@@ -48,5 +51,6 @@
         </tbody>
     </table>
     </div>
+    @endsection
 </body>
 </html>

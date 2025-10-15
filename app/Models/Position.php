@@ -1,0 +1,20 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\Schema;
+
+class Position extends Model
+{
+    public function up(): void
+    {
+        Schema::create('position', function (Blueprint $table){
+            $table->id();
+            $table->string('nama_jabatan', 100);
+            $table->decimal('gaji_pokok', 10, 2);
+            $table->timestamps();
+        });
+    }
+}

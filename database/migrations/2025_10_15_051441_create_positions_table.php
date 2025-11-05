@@ -13,6 +13,8 @@ return new class extends Migration
     {
         Schema::create('positions', function (Blueprint $table) {
             $table->id();
+            $table->string('nama_jabatan', 100);
+            $table->decimal('nama_departemen', 10, 2);
             $table->timestamps();
         });
     }
